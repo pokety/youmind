@@ -1,0 +1,134 @@
+[
+    {
+        "id": 1,
+        "pergunta": "Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa doação de sangue?",
+        "choices": [
+            "Tem entre 2 a 4 litros. São retirados 450 mililitros",
+            "Tem entre 4 a 6 litros. São retirados 450 mililitros",
+            "Tem 10 litros. São retirados 2 litros",
+            "Tem 7 litros. São retirados 1,5 litros",
+            "Tem 0,5 litros. São retirados 0,5 litros"
+        ],
+        "resposta": "Tem entre 4 a 6 litros. São retirados 450 mililitros"
+    },
+    {
+        "id": 2,
+        "pergunta": "De quem é a famosa frase 'Penso, logo existo'?",
+        "choices": [
+            "Platão",
+            "Galileu Galilei",
+            "Descartes",
+            "Sócrates",
+            "Francis Bacon"
+        ],
+        "resposta": "Descartes"
+    },
+    {
+        "id": 5,
+        "pergunta": "Qual é a capital da França?",
+        "choices": [
+            "Paris",
+            "Roma"
+        ],
+        "resposta": "Paris"
+    },
+    {
+        "id": 6,
+        "pergunta": "Quem escreveu a peça \"Romeu e Julieta\"?",
+        "choices": [
+            "William Shakespeare",
+            "Charles Dickens",
+            "Jane Austen",
+            "Mark Twain"
+        ],
+        "resposta": "William Shakespeare"
+    },
+    {
+        "id": 7,
+        "pergunta": "Qual é o maior planeta do nosso sistema solar?",
+        "choices": [
+            "Terra",
+            "Júpiter",
+            "Marte",
+            "Vênus"
+        ],
+        "resposta": "Júpiter"
+    },
+    {
+        "id": 8,
+        "pergunta": "Quem pintou a Mona Lisa?",
+        "choices": [
+            "Vincent van Gogh",
+            "Pablo Picasso",
+            "Leonardo da Vinci",
+            "Salvador Dalí"
+        ],
+        "resposta": "Leonardo da Vinci"
+    },
+    {
+        "id": 9,
+        "pergunta": "Qual é o símbolo químico para o elemento oxigênio?",
+        "choices": [
+            "O",
+            "H",
+            "C",
+            "N"
+        ],
+        "resposta": "O"
+    },
+    {
+        "id": 10,
+        "pergunta": "Quem foi o primeiro presidente dos Estados Unidos?",
+        "choices": [
+            "George Washington",
+            "Abraham Lincoln",
+            "Thomas Jefferson",
+            "John Adams"
+        ],
+        "resposta": "George Washington"
+    },
+    {
+        "id": 11,
+        "pergunta": "Qual é o nome da famosa estátua no Rio de Janeiro, Brasil?",
+        "choices": [
+            "Estátua da Liberdade",
+            "Cristo Redentor",
+            "Torre Eiffel",
+            "Coliseu"
+        ],
+        "resposta": "Cristo Redentor"
+    },
+    {
+        "id": 12,
+        "pergunta": "Qual é o maior oceano do mundo?",
+        "choices": [
+            "Oceano Atlântico",
+            "Oceano Índico",
+            "Oceano Pacífico",
+            "Oceano Ártico"
+        ],
+        "resposta": "Oceano Pacífico"
+    },
+    {
+        "id": 13,
+        "pergunta": "Quem escreveu \"Dom Quixote\"?",
+        "choices": [
+            "Miguel de Cervantes",
+            "Gabriel García Márquez",
+            "Jorge Luis Borges",
+            "Pablo Neruda"
+        ],
+        "resposta": "Miguel de Cervantes"
+    },
+    {
+        "id": 14,
+        "pergunta": "Qual é o número atômico do hidrogênio?",
+        "choices": [
+            "1",
+            "2",
+            "3",
+            "4"
+        ],
+        "resposta": "1"
+    }
+]

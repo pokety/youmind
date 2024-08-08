@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/3.4.5"></script>
+    <title>Client</title>
+</head>
+<body class="bg-gray-300 ">
+    <div class="p-3 bg-gray-300 shadow-md rounded-lg flex flex-col justify-center items-center absolute inset-0 select-none" >
+        <img class="flex-none w-48 h-48 "  id="logo" src="/public/logo.png" alt="logo" >
+        <div class="flex justify-center items-center select-none"  id="setnome">
+            <input placeholder="nome" class="h-10 px-6 font-semibold rounded-md bg-white text-black mr-2" id="nome" type="text">
+            <input class="h-10 px-6 font-semibold rounded-md bg-black text-white" id="send" type="button" value="Enviar">
+
+        </div>
+        <div id="content" style="display: none;" >
+
+        </div>
+    </div>
+    <script src="/public/client.js"></script>
+</body>
+</html>

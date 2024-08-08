@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/public/3.4.5"></script>
+    <title>Admin</title>
+</head>
+<body>
+    
+    <div class="p-3 bg-gray-300  shadow-md rounded-lg flex flex-col justify-center items-center absolute inset-0 select-none" >
+        
+        <div class="flex ">
+            <input placeholder="id pergunta" class="h-10 px-6 font-semibold rounded-md bg-white text-black mr-2"  id="pergunta" type="text">
+            <button id="enviar" class="h-10 px-6 font-semibold rounded-md bg-gray-600 hover:bg-black text-white mr-2">Enviar</button>
+            <button id="resetar" class="h-10 px-6 font-semibold rounded-md bg-red-400 hover:bg-red-600 text-white mr-2">Resetar</button>
+            <input class="h-10 px-6 font-semibold rounded-md bg-orange-400 hover:bg-orange-600 text-white " id="resultado" type="button" value="Resultado">
+        </div>
+        <div class="h-96 pr-8 max-w-4xl mt-16 overflow-y-scroll">
+
+            <ul id="lista" class="space-y-4 text-left  text-gray-500 dark:text-gray-400">
+                
+            </ul>
+
+        </div>
+    </div>
+    <script src="/public/admin.js"></script>
+</body>
+</html>
