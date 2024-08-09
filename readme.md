@@ -2,11 +2,15 @@
 E um jogo de quiz em rede local onde tem um painel que administra as perguntas ,um painel de exibicao ,eu um cliente.
 
 ## Como usar
-
+`$ git clone https://github.com/pokety/youmind.git` \
+`$ cd youmind` \
 `$ npm install ` \
-`$ npm start` \
-\
-[http://localhost:3000]()
+`$ npm start` 
+
+### Admin
+[http://localhost:3000/admin](http://localhost:3000/admin) \
+### Painel
+[http://localhost:3000/painel](http://localhost:3000/painel)
 
 ## Perguntas
 As perguntas e um arquivo **_perguntas.json_** no seguinte esquema:
