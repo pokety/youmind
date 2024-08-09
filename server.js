@@ -41,7 +41,7 @@ io.on('connection', (socket) => {
 
         if(perguntal.length>0){
             io.emit("perguntas",perguntal[0].pergunta)
-            io.emit('clientchoices',perguntal[0].choices)
+            io.emit('clientchoices',perguntal[0].opcoes)
         }else{
             io.emit("perguntas",'LOADIING')
         }

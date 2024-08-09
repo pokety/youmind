@@ -2,7 +2,7 @@
     {
         "id": 1,
         "pergunta": "Normalmente, quantos litros de sangue uma pessoa tem? Em média, quantos são retirados numa doação de sangue?",
-        "choices": [
+        "opcoes": [
             "Tem entre 2 a 4 litros. São retirados 450 mililitros",
             "Tem entre 4 a 6 litros. São retirados 450 mililitros",
             "Tem 10 litros. São retirados 2 litros",
@@ -14,7 +14,7 @@
     {
         "id": 2,
         "pergunta": "De quem é a famosa frase 'Penso, logo existo'?",
-        "choices": [
+        "opcoes": [
             "Platão",
             "Galileu Galilei",
             "Descartes",
@@ -26,7 +26,7 @@
     {
         "id": 5,
         "pergunta": "Qual é a capital da França?",
-        "choices": [
+        "opcoes": [
             "Paris",
             "Roma"
         ],
@@ -35,7 +35,7 @@
     {
         "id": 6,
         "pergunta": "Quem escreveu a peça \"Romeu e Julieta\"?",
-        "choices": [
+        "opcoes": [
             "William Shakespeare",
             "Charles Dickens",
             "Jane Austen",
@@ -46,7 +46,7 @@
     {
         "id": 7,
         "pergunta": "Qual é o maior planeta do nosso sistema solar?",
-        "choices": [
+        "opcoes": [
             "Terra",
             "Júpiter",
             "Marte",
@@ -57,7 +57,7 @@
     {
         "id": 8,
         "pergunta": "Quem pintou a Mona Lisa?",
-        "choices": [
+        "opcoes": [
             "Vincent van Gogh",
             "Pablo Picasso",
             "Leonardo da Vinci",
@@ -68,7 +68,7 @@
     {
         "id": 9,
         "pergunta": "Qual é o símbolo químico para o elemento oxigênio?",
-        "choices": [
+        "opcoes": [
             "O",
             "H",
             "C",
@@ -79,7 +79,7 @@
     {
         "id": 10,
         "pergunta": "Quem foi o primeiro presidente dos Estados Unidos?",
-        "choices": [
+        "opcoes": [
             "George Washington",
             "Abraham Lincoln",
             "Thomas Jefferson",
@@ -90,7 +90,7 @@
     {
         "id": 11,
         "pergunta": "Qual é o nome da famosa estátua no Rio de Janeiro, Brasil?",
-        "choices": [
+        "opcoes": [
             "Estátua da Liberdade",
             "Cristo Redentor",
             "Torre Eiffel",
@@ -101,7 +101,7 @@
     {
         "id": 12,
         "pergunta": "Qual é o maior oceano do mundo?",
-        "choices": [
+        "opcoes": [
             "Oceano Atlântico",
             "Oceano Índico",
             "Oceano Pacífico",
@@ -112,7 +112,7 @@
     {
         "id": 13,
         "pergunta": "Quem escreveu \"Dom Quixote\"?",
-        "choices": [
+        "opcoes": [
             "Miguel de Cervantes",
             "Gabriel García Márquez",
             "Jorge Luis Borges",
@@ -123,7 +123,7 @@
     {
         "id": 14,
         "pergunta": "Qual é o número atômico do hidrogênio?",
-        "choices": [
+        "opcoes": [
             "1",
             "2",
             "3",

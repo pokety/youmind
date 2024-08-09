@@ -1,25 +1,18 @@
 # You Mind
-E um jogo de quiz em rede local onde tem um painel que administra as perguntas ,um painel de exibicao ,eu um cliente.
+E um jogo de quiz em rede local onde tem um painel que administra as perguntas ,um painel de exibicao ,e um cliente.
 
 ## Como usar
 `$ git clone https://github.com/pokety/youmind.git` \
-`$ cd youmind` \
-`$ npm install ` \
-`$ npm start` 
+`$ cd youmind` 
 
-### Admin
-[http://localhost:3000/admin](http://localhost:3000/admin) \
-### Painel
-[http://localhost:3000/painel](http://localhost:3000/painel)
-
-## Perguntas
+### Perguntas
 As perguntas e um arquivo **_perguntas.json_** no seguinte esquema:
 ```json
 [
     {
         "id": 2,
-        "pergunta": "De quem é a famosa frase 'Penso,   logo existo'?",
-        "choices": [
+        "pergunta": "De quem é a famosa frase 'Penso,logo existo'?",
+        "opcoes": [
             "Platão",
             "Galileu Galilei",
             "Descartes",
@@ -30,6 +23,17 @@ As perguntas e um arquivo **_perguntas.json_** no seguinte esquema:
     },
 ]
 ```
+### Iniciando
+
+`$ npm install ` \
+`$ npm start` 
+
+#### Admin
+[http://localhost:3000/admin](http://localhost:3000/admin) 
+#### Painel
+[http://localhost:3000/painel](http://localhost:3000/painel)
+
+
 
 ## Screenshots
 > admin
