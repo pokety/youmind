@@ -1,5 +1,5 @@
 # You Mind
-E um jogo de quiz onde tem um painel que administra as perguntas ,um painel de exibicao ,eu um cliente.
+E um jogo de quiz em rede local onde tem um painel que administra as perguntas ,um painel de exibicao ,eu um cliente.
 
 ## Como usar
 
