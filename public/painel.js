@@ -1,37 +1,87 @@
 const socket = io();
 let content=document.querySelector("#paragraph")
-socket.on("perguntas",(pergunta)=>{
-    rating.style.display='none'
-    if(pergunta=='LOADIING'){
-        content.innerHTML=`<p  id="paragraph" class="font-serif font-semibold text-4xl mx-16">
-            
-        <img class="scale-150" src="/public/qr.png" alt="WFI" >
+const ctx = document.getElementById('myChart');
+const paragraph=document.querySelector('#paragraph')
 
-    </p>`
+
+const config={
+    type: 'bar',
+    data: {
+        axis: 'y',
+        labels: [],
+        datasets: [{
+            label: 'SCORE',
+            data: [],
+            borderWidth: 2,
+            borderRadius:5,
+            
+            backgroundColor: [
+                'rgba(255, 99, 132, 0.2)',
+                'rgba(255, 159, 64, 0.2)',
+                'rgba(255, 205, 86, 0.2)',
+                'rgba(75, 192, 192, 0.2)',
+                'rgba(54, 162, 235, 0.2)',
+                'rgba(153, 102, 255, 0.2)',
+                'rgba(201, 203, 207, 0.2)'
+            ],
+            borderColor: [
+                'rgb(255, 99, 132)',
+                'rgb(255, 159, 64)',
+                'rgb(255, 205, 86)',
+                'rgb(75, 192, 192)',
+                'rgb(54, 162, 235)',
+                'rgb(153, 102, 255)',
+                'rgb(201, 203, 207)'
+            ],
+        }],
+    },
+    options: {
+        indexAxis: 'y',
+        scales: {
+            x: {
+                type: 'linear',
+                grace: '100%',
+                ticks: {
+                    stepSize: 0.5
+                }
+            },
+        },
+        plugins: {
+            
+        }
+    }
+  }
+const charts=new Chart(ctx,config)
+
+socket.on("perguntas",(pergunta)=>{
+    paragraph.style.display='block'
+    ctx.style.display='none'
+    if(pergunta=='LOADIING'){
+        paragraph.innerHTML=`  
+        <img class="scale-150" src="/public/qr.png" alt="WFI" >
+    `
     }else{
 
-        content.innerHTML=pergunta
+        paragraph.innerHTML=pergunta
     }
 })
 socket.on("pontuacao",(pontos)=>{
-    let rating=document.querySelector('#rating')
-    content.innerHTML=''
-    rating.innerHTML=''
-    rating.style.display='block'
-    
+    paragraph.style.display='none'
+    ctx.style.display='block'
+
+    let nomes=[]
+    let ptn=[]
+
+
     pontos.forEach(el => {
-        rating.innerHTML+=`
-        <div class="p-3 bg-gray-300 shadow-md rounded-lg flex justify-center items-center  select-none w-96 mt-4">
-    <a href="#" class="text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">${el[0]}</a>
-    <div class="w-2/4 h-5 mx-4 bg-gray-200 rounded dark:bg-gray-700">
-        <div class="h-5 bg-yellow-300 rounded" style="width: ${el[1].point*10}%"></div>
-    </div>
-    <span class="text-sm font-medium text-gray-500 dark:text-gray-400">${el[1].point}</span>
-</div>
-
-       `
-
+        nomes.push(el[0])
+        ptn.push(el[1].point)
     });
 
+    config.data.labels=nomes
+    config.data.datasets[0].data=ptn
+    console.log(config.data.labels)
+    console.log(config.data.datasets[0].data)
+    charts.update()
     
 })
