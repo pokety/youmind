@@ -11,7 +11,7 @@ const interfaces=Object.keys(networkInterfaces())
 const redeLocal=interfaces.filter((el)=>el!="lo")
 const localhost=networkInterfaces()[redeLocal[0]].filter((el)=>el.family!='IPv6')
 
-QRCode.toFile('./public/qr.png',localhost[0].address + ':3000')
+QRCode.toFile('./public/qr.png',localhost[0].address + ':80')
 
 const app=express()
 const server=createServer(app)
